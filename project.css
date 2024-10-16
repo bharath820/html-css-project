@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+.header{
+ display: flex;
+ justify-content: space-between;
+ position:sticky;
+ z-index: 2;
+ top: 0;
+ 
+ background-color: whitesmoke;
+ height: 70px;
+}
+
+.header #elearn{
+    color: #35A2A6;
+    font-size: xx-large;
+}
+
+.btn{
+    height: 50px;
+    width: 150px;
+    border: none;
+}
+
+.home{
+    justify-content: space-between ;
+    display: flex;
+    gap: 20px;
+    color: black;
+    
+
+}
+
+.join{
+    border:1px solid #35A2A6;
+    background-color: #35A2A6;
+    height:50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+    height: 100%;
+    width: 100%;
+   gap: 20px;
+   border: none;
+}
+
+
+.boxa,.boxb,.boxc,.boxd{
+    background-color: whitesmoke;
+    height: 250px;
+    width: 250px;
+    margin: 10% 0;
+}
+
+.boxa:hover,.boxb:hover,.boxc:hover,.boxd:hover{
+    border: 1px solid black none;
+background-color: #35A2A6;
+color: black;
+align-items: center;
+}
+
+
+.about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.about #item1{
+    color: #35A2A6;
+}
+
+.about #item2{
+    font-size: 40px;
+
+}
+
+.arrow{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    margin: 10px;
+    row-gap: 10px;
+}
+
+.ele2 #item5{
+    background-color: #35A2A6;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border: hidden;
+}
+
+i{
+    height: 20px;
+    width: 20px;
+}
+.categorie{
+    margin: 100px 0px;
+}
+.categorie,.ele1{
+    text-align: center;
+}
+
+.ele1 h3{
+    color:#35A2A6 ;
+}
+.categorie h1{
+    font-size: 40px;
+}
+
+
+.courses{
+    text-align:center ;
+    margin: 50px;
+
+}
+
+.course1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:20px ;
+    width: 100%;
+}
+
+
+
+.course121,.course111,.course131{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    margin: 10px;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+
+
+.photocategorie{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 20px;
+    column-gap: 20px;
+   
+}
+
+
+.ram{
+   display: flex;
+   column-gap: 20px;
+   row-gap: 20px;
+   column-gap: 20px;
+}
+
+.bharath{
+    row-gap:20px;
+    column-gap:20px;
+}
+
+
+.expert{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 10px;
+
+}
+
+
+.footer{
+    background-color: darkblue;
+    color: white;
+    display: grid;
+    grid-template-columns:25% 25% 30% 20%;
+   padding:10px;
+    margin: 50px 0px 0px 0px;
+    padding: 20px;
+}
+
+.foot1{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   
+   width: 100vw;
+}
+
+.foot2{
+    margin: 40px;
+    height: 30px;
+    align-items: right;
+}
+
+.foot3{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.ram img:hover{
+    transform: scale(1.1);
+}
+.bharath img:hover{
+    transform: scale(1.1);
+}
+.ele3 img:hover{
+    transform: scale(1.1);
+}
+
+.course11 img:hover{
+    transform: scale(1.1);
+}
+
+.course12 img:hover{
+    transform: scale(1.1);
+}
+.course13 img:hover{
+    transform: scale(1.1);
+}
+
+.expert1 img:hover{
+    transform: scale(1.1);
+}
+.expert2 img:hover{
+    transform: scale(1.1);
+}
+.expert3 img:hover{
+    transform: scale(1.1);
+}
+.expert4 img:hover{
+    transform: scale(1.1);
+}
+
+.boot{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+
+
+.students{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 20px;
+}
+
+
+
+
+@media screen  and (width<=576px){
+    
+   .header{
+height: 10%;
+width: 100%;
+   }
+   .home{
+    display: none;
+   }
+
+#carouselExampleCaptions{
+    font-size: 20px;
+    background-color: blue;
+}
+
+
+   .nav{
+    display: grid;
+    justify-content: center;
+   }
+
+   .about{
+    display: block;
+   }
+
+   .about img{
+    height: 20%;
+   }
+
+   .photocategorie{
+grid-template-columns: auto;
+row-gap: 2rem;
+width: 100%;
+   }
+
+   .bharath{
+    width: 100%;
+   row-gap: 2rem;
+   }
+   .ram{
+    width: 100%;
+   }
+
+
+   .course1{
+    grid-template-columns: auto;
+    row-gap: 3rem;
+    width: 100%;
+   }
+
+.expert{
+    grid-template-columns: auto;
+    height: 300vh;
+}
+
+.students{
+    grid-template-columns: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer{
+    grid-template-columns: auto;
+}
+}
